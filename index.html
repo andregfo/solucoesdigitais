@@ -1,149 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andre Oliveira | Soluções Digitais</title>
-  <style>
-    :root {
-      --primary: #2e86de;
-      --secondary: #f5f6fa;
-      --text: #333;
-      --light: #fff;
-    }
+<html lang="pt-br">
 
-    body {
-      margin: 0;
-      font-family: "Roboto", Arial, sans-serif;
-      background-color: var(--secondary);
-      color: var(--text);
-      line-height: 1.6;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Andre Oliveira - Soluções Digitais</title>
+  </head>
 
-    header {
-      background: var(--light);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 1.2rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      color: var(--primary);
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 1rem 3rem;
-      background: var(--light);
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
-
-    .btn {
-      background: var(--primary);
-      color: var(--light);
-      padding: 0.9rem 1.8rem;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background: #1b5ca5;
-    }
-
-    section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: var(--light);
-      border-radius: 12px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      color: var(--primary);
-      margin-bottom: 0.8rem;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    .cta {
-      text-align: center;
-      background: var(--primary);
-      color: var(--light);
-      padding: 3rem 1rem;
-      border-radius: 8px;
-      margin-top: 3rem;
-    }
-
-    .cta h2 {
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 1.6rem;
-      }
-    }
-  </style>
-</head>
-<body>
+  <body>
 
   <header>
-    <h1>Andre Oliveira | Soluções Digitais</h1>
+    <img src="imagens/logo_modelo_512.png" alt="Logo">
+    <!--<h1>Andre Oliveira - Soluções Digitais</h1>-->
+    <nav>
+        <a href="#principal">Principal</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contatos</a>
+        <a>Sobre</a>
+    </nav>
   </header>
+
+  <section class="conteudo-principal" id="principal">
+    <div>
+      <h1>Andre Oliveira</h1>
+      <h2 class="conteudo-principal-escrito-subtitulo">Soluções Digitais</h2>
+    </div>
+    <img src="imagens/imagem-principal.png" alt="Imagem Figurativa">
+  </section>
 
   <section class="hero">
     <h2>Transforme sua presença digital com praticidade e estilo</h2>
-    <p>Criação de currículos profissionais, gestão de redes sociais e edição de vídeos curtos.  
+    <p>Criação de currículos profissionais, gestão de redes sociais, edição de vídeos curtos e muito mais.  
     Serviços rápidos, acessíveis e totalmente personalizados para destacar você e o seu negócio.</p>
-    <a href="#contato" class="btn">Fale comigo</a>
   </section>
 
-  <section>
-    <h2 style="text-align:center; margin-bottom:2rem;">Serviços</h2>
+  <section class="servicos" id="servicos">
+    <h2>Serviços</h2>
     <div class="services">
       <div class="card">
         <h3>🎯 Currículos Profissionais</h3>
@@ -156,6 +49,18 @@
       <div class="card">
         <h3>🎬 Edição de Vídeos Curtos</h3>
         <p>Edição profissional de Reels, Shorts e TikToks, com cortes dinâmicos, legendas e trilhas envolventes.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Suporte Técnico Remoto</h3>
+        <p>Resolução rápida de problemas no computador e organização digital por atendimento online.</p>
+      </div>
+      <div class="card">
+        <h3>🧑‍🏫 Aulas e Tutorias Online de Informática</h3>
+        <p>Aulas personalizadas de informática, produtividade e uso de ferramentas digitais.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Criação de Landing Pages Simples</h3>
+        <p>Desenvolvimento de páginas rápidas e eficazes para apresentar serviços e captar contatos.</p>
       </div>
     </div>
   </section>
@@ -171,11 +76,13 @@
   </footer>
 
   <script>
-    // Altere o número abaixo para o seu WhatsApp com DDI (ex: 351 para Portugal, 55 para Brasil)
     const phoneNumber = "+351967353090"; 
     const message = "Olá Andre! Gostaria de saber mais sobre seus serviços digitais.";
-    document.getElementById("whatsappBtn").href = 
-      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    const btn = document.getElementById("whatsappBtn");
+    btn.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    btn.target = "_blank";             // 🔥 abre em nova janela/aba
+    btn.rel = "noopener noreferrer";   // 🔒 segurança recomendada
   </script>
 
 </body>
